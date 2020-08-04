@@ -29,6 +29,11 @@ public class ProductoDao {
 		em.persist(m);
 	}
 	
+	public List<Producto> listarProducto(){
+		String jpql="SELECT p FROM Producto p";
+		Query q=em.createQuery(jpql,Producto.class);
+		return q.getResultList();
+	}
 	
 	public List<Movimiento> listarMovimiento(){
 		String jpql="SELECT p FROM Movimiento p";

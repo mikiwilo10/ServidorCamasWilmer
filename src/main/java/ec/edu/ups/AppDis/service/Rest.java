@@ -69,6 +69,16 @@ public class Rest {
 	}
 	
 	
+	@GET
+	@Path("/listarProducto")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response listarProducto() {
+	List<Producto> listaProducto =on.listarProducto();
+		
+		return Response.ok(listaProducto).header("Access-Control-Allow-Origin", "*").build();
+	}
+	
+	
 	
 	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext)
 			throws IOException {

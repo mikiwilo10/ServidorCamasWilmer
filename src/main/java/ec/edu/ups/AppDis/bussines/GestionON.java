@@ -33,5 +33,9 @@ public class GestionON {
 		return pdao.listarMovimiento();
 	}
 	
+	public List<Producto> listarProducto(){
+		return pdao.listarProducto();
+	}
+	
 	
 }
