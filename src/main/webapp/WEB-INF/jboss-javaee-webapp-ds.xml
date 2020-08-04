@@ -26,11 +26,11 @@
     <datasource jndi-name="java:jboss/datasources/jboss-javaee-webappDS"
         pool-name="jboss-javaee-webapp" enabled="true"
         use-java-context="true">
-        <connection-url>jdbc:h2:mem:jboss-javaee-webapp;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1</connection-url>
-        <driver>h2</driver>
+        <connection-url>jdbc:mysql://localhost:3306/inventario</connection-url>
+        <driver>myqsl-driver</driver>
         <security>
-            <user-name>sa</user-name>
-            <password>sa</password>
+            <user-name>root</user-name>
+            <password>wXHUoMNgnY7U9wRajKDY</password>
         </security>
     </datasource>
 </datasources>
